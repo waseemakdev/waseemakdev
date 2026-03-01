@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/my-website/">
+  <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet'>
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <style>
+    @font-face {
+      font-family: 'Rochester';
+      src: url('https://fonts.googleapis.com/css?family=Rochester') format('woff2'),
+           /* url('https://fonts.gstatic.com/s/rochester/v16/Qh7z5tQ0yAUCfu-oSILe1Mw.woff') format('woff'); */
+    }
+  </style>
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Waseem Akram | Software Engineer">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Waseem Akram | Software Engineer</title>
+  <link rel="manifest" href="manifest.json">
+
+
+  
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1914365673";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 16;
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: center;
+      align-items: center;
+      font-family: 'Rochester';  /* Use Rochester font */
+    }
+
+    /* img {
+      max-width: 100px; /* Adjust as needed for desired size */
+      /* max-height: 100px; Adjust as needed for desired size */
+      /* object-fit: cover; Optionally adjust how the image fits */
+      /* margin-bottom: 16px; Add space between image and title */
+    /* } */ 
+
+    .splash-title {
+      font-size: 3rem; /* Adjust font size as needed */
+      color: #000000;
+      font-weight: 600; /* Adjust color as needed */
+      /* font-family: 'Rochester'; */
+    }
+  </style>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+  <!-- <div class="main-content">
+    <img src="favicon.png" alt="Testing logo"> -->
+    <div class="splash-container">
+      <!-- <img src="favicon.png" alt="Testing logo"> -->
+      <h2 class="splash-title">&lt;Welcome/&gt;</h2>
+    </div>
+</body>
+</html>
